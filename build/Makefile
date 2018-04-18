@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named helloworld
+
+# Build rule for target.
+helloworld: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 helloworld
+.PHONY : helloworld
+
+# fast build rule for target.
+helloworld/fast:
+	$(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
+.PHONY : helloworld/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -124,17 +137,17 @@ tests/fast:
 .PHONY : tests/fast
 
 #=============================================================================
-# Target rules for targets named helloworld
+# Target rules for targets named MilesToKilometer
 
 # Build rule for target.
-helloworld: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 helloworld
-.PHONY : helloworld
+MilesToKilometer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MilesToKilometer
+.PHONY : MilesToKilometer
 
 # fast build rule for target.
-helloworld/fast:
-	$(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
-.PHONY : helloworld/fast
+MilesToKilometer/fast:
+	$(MAKE) -f source/CMakeFiles/MilesToKilometer.dir/build.make source/CMakeFiles/MilesToKilometer.dir/build
+.PHONY : MilesToKilometer/fast
 
 # Help Target
 help:
@@ -144,8 +157,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... tests"
 	@echo "... helloworld"
+	@echo "... tests"
+	@echo "... MilesToKilometer"
 .PHONY : help
 
 

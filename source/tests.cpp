@@ -54,21 +54,21 @@ double surface (double r, double h) {  //Oberfläche Zylinder
 
 TEST_CASE ("describe_surface","[surface]")
 {
-REQUIRE (surface (2 ,4) == 75.39822369);
-REQUIRE (surface (9 ,6) == 848.2300165);
-REQUIRE (surface (3 ,7) == 188.4955592);
+REQUIRE (surface (2 ,4) == Approx(75.39822369));
+REQUIRE (surface (9 ,6) == Approx(848.2300165));
+REQUIRE (surface (3 ,7) == Approx(188.4955592));
 }
 
 double volume (double r, double h) {   //Volumen Zylinder
-    return  M_PI*sqrt(r)*h;
+    return  M_PI*pow(r,2)*h;
    
 }
 
 TEST_CASE ("describe_volume","[volume]")
 {
-REQUIRE (volume (2 ,4) == 50.26548246);
-REQUIRE (volume (9 ,6) == 1526.81403);
-REQUIRE (volume (3 ,7) == 197.9203372);
+REQUIRE (volume (2 ,4) == Approx(50.26548246));
+REQUIRE (volume (9 ,6) == Approx(1526.81403));
+REQUIRE (volume (3 ,7) == Approx(197.9203372));
 }
 
 
@@ -148,7 +148,7 @@ long int factorial (int f) {
         std::cout<<"Invalide Eingabe. Bitte nur positive Zahlen eingeben!"<<'\n';
     }
     else {
-        return (factorial(f-1)*factorial(f));
+        return (factorial(f-1)*f);
     }
 }
 
@@ -196,6 +196,7 @@ std::cout<<"Der ggt von "<<a<<" und "<<b<<" lautet "<<gcd(a,b)<<'\n';
 
 //Summe
 std::cout<<"Die Summe der Zahlen von 1 bis 1000, die entwerder durch 3 oder 5 teilbar sind, lautet: "<<sumMultiples()<<'\n';  
+
 
 //Zylinder
  std::cout<< "Bitte geben Sie den Radius und die Höhe des Zylinders an: "<<'\n';  

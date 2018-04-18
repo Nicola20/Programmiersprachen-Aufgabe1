@@ -13,7 +13,7 @@ TEST_CASE ("describe_milesToKilometer","[milesToKilometer]")
 {
 REQUIRE (milesToKilometer (4) == 6.44);
 REQUIRE (milesToKilometer (9) == 14.49);
-REQUIRE (milesToKilometer (7) == 11.27);
+REQUIRE (milesToKilometer (7) == Approx(11.27));
 }
 
 int main (int argc , char * argv []){

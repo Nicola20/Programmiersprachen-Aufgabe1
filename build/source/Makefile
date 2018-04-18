@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/helloworld.dir/rule:
+	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
+.PHONY : source/CMakeFiles/helloworld.dir/rule
+
+# Convenience name for target.
+helloworld: source/CMakeFiles/helloworld.dir/rule
+
+.PHONY : helloworld
+
+# fast build rule for target.
+helloworld/fast:
+	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
+.PHONY : helloworld/fast
+
+# Convenience name for target.
 source/CMakeFiles/tests.dir/rule:
 	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
 .PHONY : source/CMakeFiles/tests.dir/rule
@@ -126,19 +141,46 @@ tests/fast:
 .PHONY : tests/fast
 
 # Convenience name for target.
-source/CMakeFiles/helloworld.dir/rule:
-	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/helloworld.dir/rule
-.PHONY : source/CMakeFiles/helloworld.dir/rule
+source/CMakeFiles/MilesToKilometer.dir/rule:
+	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/MilesToKilometer.dir/rule
+.PHONY : source/CMakeFiles/MilesToKilometer.dir/rule
 
 # Convenience name for target.
-helloworld: source/CMakeFiles/helloworld.dir/rule
+MilesToKilometer: source/CMakeFiles/MilesToKilometer.dir/rule
 
-.PHONY : helloworld
+.PHONY : MilesToKilometer
 
 # fast build rule for target.
-helloworld/fast:
-	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/build
-.PHONY : helloworld/fast
+MilesToKilometer/fast:
+	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f source/CMakeFiles/MilesToKilometer.dir/build.make source/CMakeFiles/MilesToKilometer.dir/build
+.PHONY : MilesToKilometer/fast
+
+MilesToKilometer.o: MilesToKilometer.cpp.o
+
+.PHONY : MilesToKilometer.o
+
+# target to build an object file
+MilesToKilometer.cpp.o:
+	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f source/CMakeFiles/MilesToKilometer.dir/build.make source/CMakeFiles/MilesToKilometer.dir/MilesToKilometer.cpp.o
+.PHONY : MilesToKilometer.cpp.o
+
+MilesToKilometer.i: MilesToKilometer.cpp.i
+
+.PHONY : MilesToKilometer.i
+
+# target to preprocess a source file
+MilesToKilometer.cpp.i:
+	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f source/CMakeFiles/MilesToKilometer.dir/build.make source/CMakeFiles/MilesToKilometer.dir/MilesToKilometer.cpp.i
+.PHONY : MilesToKilometer.cpp.i
+
+MilesToKilometer.s: MilesToKilometer.cpp.s
+
+.PHONY : MilesToKilometer.s
+
+# target to generate assembly for a file
+MilesToKilometer.cpp.s:
+	cd /home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build && $(MAKE) -f source/CMakeFiles/MilesToKilometer.dir/build.make source/CMakeFiles/MilesToKilometer.dir/MilesToKilometer.cpp.s
+.PHONY : MilesToKilometer.cpp.s
 
 helloworld.o: helloworld.cpp.o
 
@@ -200,10 +242,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... tests"
 	@echo "... helloworld"
+	@echo "... edit_cache"
+	@echo "... tests"
+	@echo "... MilesToKilometer"
+	@echo "... rebuild_cache"
+	@echo "... MilesToKilometer.o"
+	@echo "... MilesToKilometer.i"
+	@echo "... MilesToKilometer.s"
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
