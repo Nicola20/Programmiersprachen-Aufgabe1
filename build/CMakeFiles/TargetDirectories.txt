@@ -1,0 +1,6 @@
+/home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build/CMakeFiles/edit_cache.dir
+/home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build/CMakeFiles/rebuild_cache.dir
+/home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build/source/CMakeFiles/edit_cache.dir
+/home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build/source/CMakeFiles/rebuild_cache.dir
+/home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build/source/CMakeFiles/tests.dir
+/home/nicola/Dokumente/Programmiersprachen/Programmiersprachen-Aufgabe1/build/source/CMakeFiles/helloworld.dir
